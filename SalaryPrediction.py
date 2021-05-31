@@ -7,12 +7,11 @@ from sklearn.linear_model import LinearRegression
 mind = LinearRegression()
 model = mind.fit(x,y)
 while(True):
-    exp = input("\n                   Enter Your Years of Experience: ")
+    exp = input("\n \t\t\t Enter Your Years of Experience: ")
     exp = float(exp)
     if exp < 0 :
-        print("Invalid Entry")
-        break
+        print("\n \t\t\t Invalid Entry")
     prediction = model.predict([[exp]])
-    print("\n                       Your Salary:", prediction ,)
-    if input("\n                      Do You Want To Continue[y,n]? ") != 'y':
+    print("\n \t\t\t Your Salary:", prediction ,)
+    if input("\n \t\t\t Do You Want To Continue[y,n]? ") != 'y':
         break
